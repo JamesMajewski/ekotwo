@@ -15,7 +15,7 @@ def fetch_marka_value(url):
     options.add_argument('--headless')
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-dev-shm-usage')
-    options.binary_location = '/usr/bin/google-chrome'  # Add this line
+    options.binary_location = '/usr/bin/google-chrome'  # Ensure this path is correct
 
     service = ChromeService(executable_path='/usr/local/bin/chromedriver')
     driver = webdriver.Chrome(service=service, options=options)
